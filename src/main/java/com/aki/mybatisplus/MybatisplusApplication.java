@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan("com.aki.mybatisplus.mapper")
 public class MybatisplusApplication {
     private static final Logger logger = LoggerFactory.getLogger(MybatisplusApplication.class);
 
