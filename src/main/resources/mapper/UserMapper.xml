@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aki.mybatisplus.mapper.UserMapper">
+    <select id="selectOneUser" resultType="User" parameterType="java.lang.Integer">
+        select * from user u where u.id = #{id};
+    </select>
+
+    <select id="selectPageVo" resultType="User" parameterType="java.lang.Integer">
+    SELECT * FROM user WHERE userAge=#{userAge}
+</select>
+</mapper>
