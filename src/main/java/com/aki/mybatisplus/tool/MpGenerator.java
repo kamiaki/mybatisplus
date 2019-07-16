@@ -58,7 +58,10 @@ public class MpGenerator {
         gc.setOutputDir(projectPath + config.getString("outputdir"));
         gc.setAuthor(config.getString("author"));
         gc.setOpen(false);
-        gc.setFileOverride(false);//覆盖
+        gc.setFileOverride(true);//覆盖
+        gc.setBaseColumnList(true);// XML columList 有这个mapper就会有 Base_Column_List
+        gc.setBaseResultMap(true);// XML ResultMap 有这个mapper就会有 BaseResultMap
+        gc.setSwagger2(false);   // 实体属性 Swagger2 注解
         mpg.setGlobalConfig(gc);
 
         // 数据源配置
@@ -103,8 +106,7 @@ public class MpGenerator {
 
         // 配置模板
         TemplateConfig templateConfig = new TemplateConfig();
-
-        templateConfig.setXml(null);
+        templateConfig.setXml(null);// 关闭默认 xml 生成，调整生成 至 根目录
         mpg.setTemplate(templateConfig);
 
         // 策略配置
