@@ -88,6 +88,16 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
+
+        <!--oracle 驱动-->
+        <!--oracle 驱动-->
+        <!--oracle 驱动-->
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.3</version>
+        </dependency>
+
         <!--工具类-->
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -99,6 +109,21 @@
             <groupId>commons-configuration</groupId>
             <artifactId>commons-configuration</artifactId>
             <version>1.10</version>
+        </dependency>
+
+        <!--swagger注解依赖-->
+        <!--swagger注解依赖-->
+        <!--swagger注解依赖-->
+        <!--swagger注解依赖-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.4.0</version>
         </dependency>
 
     </dependencies>

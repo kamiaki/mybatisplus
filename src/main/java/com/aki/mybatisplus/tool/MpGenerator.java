@@ -61,7 +61,7 @@ public class MpGenerator {
         gc.setFileOverride(true);//覆盖
         gc.setBaseColumnList(true);// XML columList 有这个mapper就会有 Base_Column_List
         gc.setBaseResultMap(true);// XML ResultMap 有这个mapper就会有 BaseResultMap
-        gc.setSwagger2(false);   // 实体属性 Swagger2 注解
+        gc.setSwagger2(true);   // 实体属性 Swagger2 注解
         mpg.setGlobalConfig(gc);
 
         // 数据源配置
